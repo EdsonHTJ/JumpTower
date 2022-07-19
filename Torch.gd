@@ -19,4 +19,5 @@ func _ready():
 func _on_Torch_area_entered(area):
 	if area.name == "atkArea":
 		PlayerController.impulsePlayer()
+		queue_free()
 	pass # Replace with function body.
