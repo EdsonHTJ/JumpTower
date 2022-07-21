@@ -21,3 +21,5 @@ func _on_Torch_area_entered(area):
 		PlayerController.impulsePlayer()
 		queue_free()
 	pass # Replace with function body.
+	
+	

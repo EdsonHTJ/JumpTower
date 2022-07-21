@@ -13,7 +13,6 @@ func playerJump(vel):
 	emit_signal("playerJump", vel)
 	
 func stopJump():
-	print("sj")
 	emit_signal("stopJump")
 	
 func levelPassed():

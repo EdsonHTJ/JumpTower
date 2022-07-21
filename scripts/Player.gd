@@ -8,6 +8,7 @@ var vel = Vector2(0,0)
 var isAtk = false
 var initPos = Vector2()
 var limit = 0
+var flip = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	initPos = position
@@ -26,6 +27,9 @@ func _unhandled_input(event):
 		isAtk = true
 		$atkArea.enableColision()
 		$AnimatedSprite.play("atk")
+		$AnimatedSprite.flip_h = flip
+		flip = !flip
+		
 		pass
 		
 func _physics_process(delta):
